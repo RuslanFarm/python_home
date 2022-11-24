@@ -1,3 +1,4 @@
+#https://youtu.be/4S8j8t34vG0
 with open('27-75b.txt') as f:
     n = int(f.readline())
     summa, maxsum, len_sp, cor_maxsum, cor_len = 0, 0, 0, 0, 0
