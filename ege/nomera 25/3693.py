@@ -32,4 +32,4 @@ for i in range(10):
         if int('12' + str(i) + str(j) + '45') % 51 == 0:
             sp.append(int('1245' + str(i) + str(j)))
             ost.append(int(int('1245' + str(i) + str(j)) / 51))
-print(sp, ost, sep='\n')
+print(sorted(sp), sorted(ost), sep='\n')
