@@ -1,2 +1,1 @@
-s= '-1234'
-print(int(s.rstrip())
+print(int("11100001", base = 2))
