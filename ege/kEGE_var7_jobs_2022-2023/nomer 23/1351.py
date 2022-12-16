@@ -1,8 +1,13 @@
-def f(start, step, stop):
-    if start > step or start == stop:
+def f(st, s, ex):
+    if st > s or st == ex:
         return 0
-    elif step == stop:
+    elif st == s:
         return 1
     else:
-        return f(start, step + 1, stop) + f(start, step+2, stop)
-print(f(11,17,29))
+        return f(st + 1, s, ex) + f(st + 2, s, ex)
+
+
+print(f(11, 17, 0) * f(17, 23, 0) * f(23, 29, 0))
+print(f(11, 23, 17) * f(23, 29, 0))
+print(f(11, 17, 0) * f(17, 29, 23))
+print(2197 + 832 + 832)
